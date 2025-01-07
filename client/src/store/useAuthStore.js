@@ -1,5 +1,5 @@
 import {create} from 'zustand';
-import {axiosInstance} from '../lib/axios';
+import {axiosInstance} from '../lib/axios.js';
 
 export const useAuthStore = create((set) => ({
     authUser: null,
@@ -20,5 +20,5 @@ export const useAuthStore = create((set) => ({
         }finally{
             set({isCheckingAuth:false});
         }
-    }
+    },
 }));
